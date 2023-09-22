@@ -11,6 +11,8 @@ class _Test2PageState extends State<Test2Page> {
   bool isTitleBold = true;
   bool isDescriptionJustify = false;
   double valueRedSlider = 0;
+  double valueGreenSlider = 0;
+  double valueBlueSlider = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +37,8 @@ class _Test2PageState extends State<Test2Page> {
               textAlign:
                   isDescriptionJustify ? TextAlign.justify : TextAlign.start,
               style: TextStyle(
-                color: Color.fromRGBO(valueRedSlider.toInt(), 155, 198, 1),
+                color: Color.fromRGBO(valueRedSlider.toInt(),
+                    valueGreenSlider.toInt(), valueBlueSlider.toInt(), 1),
               ),
             ),
             /* Checkbox(
@@ -72,7 +75,28 @@ class _Test2PageState extends State<Test2Page> {
                 valueRedSlider = value;
                 setState(() {});
               },
-            )
+            ),
+            Slider(
+              min: 0,
+              max: 255,
+              value: valueGreenSlider,
+              onChanged: (value) {
+                print(value);
+                valueGreenSlider = value;
+                setState(() {});
+              },
+            ),
+            Slider(
+              min: 0,
+              max: 255,
+              value: valueBlueSlider,
+              label: valueBlueSlider.round().toString(),
+              onChanged: (value) {
+                print(value);
+                valueBlueSlider = value;
+                setState(() {});
+              },
+            ),
           ],
         ),
       ),
