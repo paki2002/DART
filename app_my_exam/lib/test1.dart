@@ -97,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset('assets/imahes/image3.jpeg', width: 30, height: 30), // Imagen
+                  Image.asset('assets/imahes/image1.jpg', width: 30, height: 30), // Imagen
                   SizedBox(width: 10), // Espacio entre la imagen y el texto
                   Text('Calcular'), // Texto
                 ],
