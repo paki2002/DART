@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -25,8 +24,8 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   bool isTitleBold = true;
-  double peso = 70;
-  double altura = 170;
+  double peso = 80;
+  double altura = 190;
   String resultado = '';
   String categoria = '';
   String mensaje = '';
@@ -62,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           children: <Widget>[
             Text(
-              "Bienvenido selecciona tu peso y altura",
+              "Bienvenido,selecciona tu peso y altura",
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight:
@@ -107,6 +106,8 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  Image.asset('assets/images/play.jpg',
+                      width: 30, height: 30), // Imagen
                   SizedBox(width: 10), // Espacio entre la imagen y el texto
                   Text('Calcular'), // Texto
                 ],
@@ -129,7 +130,7 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(height: 10),
             if (categoria.isNotEmpty)
               Image.asset(
-                'assets/images/image2.png',
+                'assets/images/$categoria.jph',
                 width: 230,
                 height: 230,
               ),

@@ -97,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset('assets/imahes/image1.jpg', width: 30, height: 30), // Imagen
+                  Image.asset('assets/calcular_icon.jpg', width: 30, height: 30), // Imagen
                   SizedBox(width: 10), // Espacio entre la imagen y el texto
                   Text('Calcular'), // Texto
                 ],
@@ -117,7 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(height: 10),
             if (categoria.isNotEmpty)
               Image.asset(
-                'assets/$categoria.png', // Ruta de la imagen basada en la categoría de peso
+                'assets/$categoria.jpg', // Ruta de la imagen basada en la categoría de peso
                 width: 100,
                 height: 100,
               ),

@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           children: <Widget>[
             Text(
-              "Bienvenido selecciona tu peso y altura",
+              "Bienvenido,selecciona tu peso y altura",
                style: TextStyle(
                 fontSize: 20.0,
                 fontWeight:
@@ -95,7 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: calcular,
-              child: Image.asset('assets/images/image3.jpeg'), 
+              child: Image.asset('assets/images/play.jpg'), 
             ),
             SizedBox(height: 20),
             Text(
