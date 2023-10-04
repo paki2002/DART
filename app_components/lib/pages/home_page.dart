@@ -59,6 +59,10 @@ class HomePage extends StatelessWidget {
                 titulo: "Alert",
                 irPagina: AlertPage(),
               ),
+              ItemComponentWidget(
+                titulo: "Card",
+                irPagina: CardPage(),
+              ),
             ],
           ),
         ),
