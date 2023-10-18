@@ -26,7 +26,7 @@ class MyDrawerWidget extends StatelessWidget {
                     radius: 30,
                     backgroundColor: Colors.amber,
                     backgroundImage: NetworkImage(
-                        "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg"),
+                        "https://www.pexels.com/es-es/foto/hombre-edificios-hombres-pie-8126851"),
                   ),
                   Text(
                     "Marco Antonio Rivera Rosales",
